@@ -1,0 +1,87 @@
+<!--pages/usercenter/usercenter.wxml-->
+<view class="cu-bar bg-white shaw-blur lg" style='margin-top:25px'>
+  <view class="action">
+    <text class="cuIcon-appreciatefill text-black"></text>
+    <image class="sign" src="https://www.gatesma.cn/myfile/img/ziti.png"></image>
+  </view>
+</view>
+
+<view class="user-info" style="background-image: url({{skin}})">
+     <view class="user-skin" bindtap="viewSkin"></view>
+     <image src="{{userInfo.avatarUrl}}" class="user-avatar"></image>
+</view>
+
+<view class="personalMe">
+    <open-data type="userAvatarUrl" style="width:68px;height:68px;border:1px solid #ddd;float:left;margin:20rpx 20rpx;border-radius: 50%;"></open-data>
+    <view class="personalInfo">
+        <text class="text-brown">用户名: {{user.username}}</text>
+        <text class="text-brown">电话: {{user.phone}}</text>
+    </view>
+</view>
+
+
+
+<view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+        <text class="cuIcon-title text-orange "></text> 菜单列表
+    </view>
+</view>
+
+<view class="cu-list menu text-left solid-top">
+
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+        <view class="content" bindtap='edit'>
+            <text class="cuIcon-write text-red"></text>
+            <text class="text-grey" bindtap='createInfo'>修改信息</text>
+        </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+        <view class="content" bindtap='myInfos'>
+            <text class="cuIcon-circlefill text-green"></text>
+            <text class="text-grey">我的招募</text>
+        </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+        <view class="content">
+            <text class="cuIcon-tagfill text-pink"></text>
+            <text class="text-grey" bindtap='createInfo'>新建招募</text>
+        </view>
+    </view>
+
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+        <view class="content">
+            <text class="cuIcon-like text-red"></text>
+            <text class="text-grey" bindtap='myCollection'>我的收藏</text>
+        </view>
+    </view>
+
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-warn text-pupple"></text>
+        <text class="text-grey" bindtap='signout'>登出系统</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm" bindtap='signout'>退出当前系统并跳转至登陆页</text>
+      </view>
+    </view>
+<view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+        <text class="cuIcon-title text-blue "></text> 关于我们
+    </view>
+</view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+        <view class="content">
+            <text class="cuIcon-friend text-brown"></text>
+            <text class="text-grey" bindtap='aboutUs'>关于</text>
+        </view>
+    </view>
+      <view class="cu-item {{menuArrow?'arrow':''}}">
+        <view class="content">
+            <text class="cuIcon-edit text-olive"></text>
+            <text class="text-grey" bindtap='log'>开发日志</text>
+        </view>
+    </view>
+
+
+
+</view>

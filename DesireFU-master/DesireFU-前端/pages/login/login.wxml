@@ -1,0 +1,53 @@
+<view > 
+<image class = 'backpicture'></image>
+</view>
+<view class="cu-bar bg-white shaw-blur lg" style='margin-top:25px'>
+  <view class="action">
+    <text class="cuIcon-appreciatefill text-black"></text>
+    <image class="sign" src="https://www.gatesma.cn/myfile/img/ziti.png"></image>
+  </view>
+</view>
+
+
+<view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="https://www.gatesma.cn/myfile/img/loading.gif"></image>
+  </view>
+  <block wx:else>
+ <view class="content">
+
+<!-- logo图片 -->
+<view>
+    <image class="logo"
+          style="width: 200rpx; height: 200rpx; background-color: #ede1d9;"
+          mode="aspectFit"
+          src="https://www.gatesma.cn/myfile/img/icon.png"
+        ></image>
+</view>
+
+<form bindsubmit="formSubmit">
+	<view class="cu-form-group margin-top margin-left margin-right">
+        <text class="cuIcon-people lg text-gray"></text>
+		<view class="title">用户名</view>
+		<input placeholder="输入用户名" type='text' name="username"></input>
+	</view>
+	<view class="cu-form-group  margin-left margin-right">
+        <text class="cuIcon-write lg text-gray"></text>
+		<view class="title">密码</view>
+		<input placeholder="密码" type='password' name="pass"></input>
+	</view>
+       
+    <view class="grid col-2 margin-bottom text-center"role=""aria-label="">
+        <view class="padding"role=""aria-label="">
+            <button class="cu-btn round bg-cyan lg" id='login' formType="submit">登陆</button>
+        </view>
+        <view class="padding"role=""aria-label="">
+            <button class="cu-btn round bg-grey lg" id='register' bindtap='navToRegister'>注册</button>
+        </view>
+    </view>
+
+    <view class='section_text text-grey text-shadow text-grey'>
+        @DesireFU
+    </view>
+</form>
+</view>
+</block>

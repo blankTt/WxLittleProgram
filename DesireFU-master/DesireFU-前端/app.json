@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/Info/Info",
+        "pages/register/register",
+        "pages/search/search",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/usercenter/usercenter",
+        "pages/detail/detail",
+        "pages/createInfo/createInfo",
+        "pages/edit/edit",
+        "pages/skin/skin",
+        "pages/about/about",
+        "pages/person/person",
+        "pages/mycollect/mycollect"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "selectedColor": "#1AAD16",
+        "list": [
+            {
+                "pagePath": "pages/Info/Info",
+                "text": "招募大厅",
+                "iconPath": "images/info.png",
+                "selectedIconPath": "images/info-selec.png"
+            },
+            {
+                "pagePath": "pages/search/search",
+                "text": "搜索",
+                "iconPath": "images/search.png",
+                "selectedIconPath": "images/search-selec.png"
+            },
+            {
+                "pagePath": "pages/usercenter/usercenter",
+                "text": "个人中心",
+                "iconPath": "images/usercenter.png",
+                "selectedIconPath": "images/user-selec.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

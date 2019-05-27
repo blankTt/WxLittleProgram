@@ -1,0 +1,49 @@
+
+/**colorUI**/
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.backpicture{
+  width:100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(https://www.gatesma.cn/myfile/img/background.png);
+  z-index: 0; 
+  position: absolute;
+}
+.sign{
+  display: flex;
+  width: 500rpx;
+  margin-left: 220rpx;
+  height: 60rpx;
+}
+.sign2{
+  display: flex;
+  width: 500rpx;
+  margin-left: 170rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+.fh{
+  height: 40rpx;
+  width: 60rpx;
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+}
+.al{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
